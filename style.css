@@ -36,6 +36,8 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 .navbar .logo img {
   flex: 1 1 auto;
@@ -60,7 +62,7 @@ body {
   text-decoration: none;
   color: black;
   font-weight: 600;
-  font-size: 15px;
+  font-size: 19px;
   text-transform: capitalize;
   padding: 0px 17px;
   letter-spacing: 1px;
@@ -76,11 +78,12 @@ body {
 #navbar-bottom {
   display: flex;
   flex-wrap: wrap;
+  background-color: red;
 }
 .left-content {
   background-color: #fb5849;
   flex: 1 1 35%; /* flex-grow - 1 , flex-shrink: 1*/
-  padding: 280px 0px;
+  padding: 400px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +101,7 @@ h6,
   flex-grow: 1;
 }
 #navbar-bottom .left-content h4 {
-  font-size: 30px;
+  /* font-size: 30px; */
   font-family: "Dancing Script", cursive;
   font-style: normal;
   color: #fff;
@@ -129,6 +132,9 @@ h6,
   flex: 1 1 65%;
   padding: 280px 0px;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #navbar-bottom .right-content #prev {
   position: absolute;
@@ -194,19 +200,21 @@ h6,
 }
 .about-us {
   display: flex;
-  padding: 80px 20px;
+  padding: 50px 20px 50px 20px;
+
   flex-wrap: wrap;
 }
+
 .left-about-us {
   flex: 1 1 50%;
-  padding: 0px 20px;
+  padding: 0px 50px;
   padding-top: 90px;
   padding-bottom: 30px;
 }
 
 .left-about-us h3 {
   color: #fb5849;
-  font-size: 17px;
+  font-size: 19px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -216,13 +224,13 @@ h6,
   color: black;
   padding: 14px 0px;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 45px;
   word-spacing: 2px;
 }
 
 .left-about-us .span1,
 .span2 {
-  font-size: 15px;
+  font-size: 17px;
   text-align: justify;
 }
 .left-about-us h3,
@@ -256,10 +264,13 @@ h2,
 .right-about-us img {
   position: relative;
   flex: 1 1 50%;
-  height: 530px;
+  padding: 0px 0px 2px 1px;
+  height: 650px;
 }
 .our-menu {
-  padding: 50px;
+  padding-left: 50px;
+  padding-top: 70px;
+  padding-bottom: 150px;
   flex-wrap: wrap;
 }
 .our-menu .top-items {
@@ -269,7 +280,7 @@ h2,
 
 .our-menu .top-items h2 {
   color: #fb5849;
-  font-size: 17px;
+  font-size: 19px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 500;
@@ -278,7 +289,7 @@ h2,
   color: black;
   padding: 14px 0px;
   font-weight: 900;
-  font-size: 30px;
+  font-size: 45px;
   word-spacing: 2px;
 }
 .out-menu .top-items h2,
@@ -294,28 +305,61 @@ h4 {
 .our-menu .bottom-menu-items #image-1,
 #image-2,
 #image-3,
-#image-4 {
-  flex-wrap: wrap;
-  padding: 100px 100px 100px 100px;
+#image-4,
+#image-5 {
+  background-color: blue;
+  height: 401px;
+  width: 19%;
+  background-position: center;
+  background-size: cover;
 }
 .our-menu .bottom-menu-items #image-1 {
-  padding: 100px 100px 100px 100px;
   background-image: url("./Images/menu-item-01.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .our-menu .bottom-menu-items #image-2 {
   background-image: url("./Images/menu-item-02.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .our-menu .bottom-menu-items #image-3 {
   background-image: url("./Images/menu-item-03.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .our-menu .bottom-menu-items #image-4 {
   background-image: url("./Images/menu-item-04.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+.our-menu .bottom-menu-items #image-5 {
+  background-image: url("./Images/menu-item-05.jpg");
+}
+.our-menu .bottom-menu-hover-content {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.our-menu .image-1-hover-content {
+  background-color: blue;
+  height: 401px;
+  width: 19%;
+  background-color: green;
+}
+.our-menu .image-2-hover-content {
+  background-color: blue;
+  height: 401px;
+  width: 19%;
+  background-color: green;
+}
+.our-menu .image-3-hover-content {
+  background-color: blue;
+  height: 401px;
+  width: 19%;
+  background-color: green;
+}
+.our-menu .image-4-hover-content {
+  background-color: blue;
+  height: 401px;
+  width: 19%;
+  background-color: green;
+}
+.our-menu .image-5-hover-content {
+  background-color: blue;
+  height: 401px;
+  width: 19%;
+  background-color: green;
 }
